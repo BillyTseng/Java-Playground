@@ -1,3 +1,5 @@
+package lint.easy;
+
 public class ValidPalindrome {
     /**
      * @param s: A string

@@ -1,3 +1,5 @@
+package lint.medium;
+
 public class SearchinRotatedSortedArray {
     /**
      * @param A: an integer rotated sorted array

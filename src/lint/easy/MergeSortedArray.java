@@ -1,4 +1,6 @@
 /*Given two sorted integer arrays A and B, merge B into A as one sorted array.*/
+package lint.easy;
+
 public class MergeSortedArray {
     /*
      * @param A: sorted integer array A which has m elements, but size of A is m+n

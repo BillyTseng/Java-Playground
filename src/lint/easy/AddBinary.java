@@ -1,4 +1,5 @@
 /*Given two binary strings, return their sum (also a binary string).*/
+package lint.easy;
 
 public class AddBinary {
     /**
