@@ -4,7 +4,7 @@ public class RainbowSort {
     public int[] rainbowSort(int[] array) {
         // Write your solution here
         if (array == null || array.length <= 0) {
-            return new int[0];
+            return array;
         }
         int neg = 0, zero = 0;
         int one = array.length - 1;
