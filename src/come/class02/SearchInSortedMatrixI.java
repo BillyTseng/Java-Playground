@@ -3,6 +3,28 @@ package come.class02;
 import java.util.Arrays;
 
 public class SearchInSortedMatrixI {
+    public int[] searchInConvertedOneDimensionArray(int[][] matrix, int target) {
+        if (matrix == null || matrix.length <= 0 || matrix[0].length <= 0) {
+            return new int[] {-1, -1};
+        }
+
+        int left = 0;
+        int right = matrix.length * matrix[0].length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            int row = mid / matrix[0].length;
+            int col = mid % matrix[0].length;
+            if (matrix[row][col] == target) {
+                return new int[] {row, col};
+            } else if (matrix[row][col] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return new int[] {-1, -1};
+    }
+
     public int[] search(int[][] matrix, int target) {
         // Write your solution here
         int[] res = new int[] {-1, -1};
@@ -62,5 +84,8 @@ public class SearchInSortedMatrixI {
         System.out.println(Arrays.toString(solution.search(matrix, 6)));
         // {{1,2,3,3,4},{4,5,6,7,10},{12,14,14,17,19},{22,22,22,24,25}}, t = 24 return {3, 3}
         System.out.println(Arrays.toString(solution.search(matrix, 24)));
+
+        System.out.println(Arrays.toString(solution.searchInConvertedOneDimensionArray(matrix, 6)));
+        System.out.println(Arrays.toString(solution.searchInConvertedOneDimensionArray(matrix, 24)));
     }
 }
