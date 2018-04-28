@@ -1,4 +1,4 @@
-package come.class03;
+package come.class04;
 
 public class MiddleNodeOfLinkedList {
     private ListNode middleNode(ListNode head) {

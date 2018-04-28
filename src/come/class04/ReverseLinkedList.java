@@ -1,4 +1,4 @@
-package come.class03;
+package come.class04;
 
 class ListNode {
     public int value;
