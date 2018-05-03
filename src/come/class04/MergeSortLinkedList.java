@@ -2,7 +2,7 @@ package come.class04;
 
 public class MergeSortLinkedList {
     public ListNode mergeSort(ListNode head) {
-        if (head == null) {
+        if (head == null || head.next == null) {
             return head;
         }
         ListNode mid = findMiddle(head);
