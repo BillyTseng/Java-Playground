@@ -18,10 +18,10 @@ public class InsertNodeIterativeInBST {
                 }
             } else {
                 if (curr.right == null) {
-                    curr.left= newNode;
+                    curr.right= newNode;
                     break;
                 } else {
-                    curr = curr.left;
+                    curr = curr.right;
                 }
             }
         }
