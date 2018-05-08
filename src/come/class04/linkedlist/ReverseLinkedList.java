@@ -1,4 +1,4 @@
-package come.class04;
+package come.class04.linkedlist;
 
 class ListNode {
     public int value;

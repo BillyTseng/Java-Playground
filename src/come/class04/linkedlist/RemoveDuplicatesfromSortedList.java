@@ -1,4 +1,4 @@
-package come.class04;
+package come.class04.linkedlist;
 
 public class RemoveDuplicatesfromSortedList {
     public ListNode removeDup(ListNode head) {

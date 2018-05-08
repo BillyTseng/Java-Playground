@@ -1,4 +1,4 @@
-package come.class04;
+package come.class04.linkedlist;
 
 public class DeleteNodeAtIndex {
     public ListNode deleteNode(ListNode head, int index) {
