@@ -1,4 +1,4 @@
-package come.class05;
+package come.class04.binarytree;
 
 public class DeleteInBinarySearchTree {
     private TreeNode delete(TreeNode root, int key) {

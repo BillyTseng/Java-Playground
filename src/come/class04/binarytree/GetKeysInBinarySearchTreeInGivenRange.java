@@ -1,4 +1,4 @@
-package come.class05;
+package come.class04.binarytree;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package come.class05;
+package come.class04.binarytree;
 
 class TreeNode {
     public int key;

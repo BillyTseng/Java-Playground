@@ -1,4 +1,4 @@
-package come.class05;
+package come.class04.binarytree;
 
 public class SearchNodeRecursiveInBST {
     private TreeNode search(TreeNode root, int target) {

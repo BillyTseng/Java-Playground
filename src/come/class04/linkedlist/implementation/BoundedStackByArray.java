@@ -1,4 +1,4 @@
-package come.class04.implementation;
+package come.class04.linkedlist.implementation;
 
 public class BoundedStackByArray {
     private int head;

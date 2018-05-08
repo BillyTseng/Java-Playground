@@ -1,4 +1,4 @@
-package come.class05;
+package come.class04.binarytree;
 
 public class InsertNodeIterativeInBST {
     public TreeNode insert(TreeNode root, int key) {

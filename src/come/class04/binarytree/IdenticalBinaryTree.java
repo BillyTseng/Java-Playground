@@ -1,4 +1,4 @@
-package come.class05;
+package come.class04.binarytree;
 
 public class IdenticalBinaryTree {
     private boolean isIdentical(TreeNode one, TreeNode two) {
