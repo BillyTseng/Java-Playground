@@ -1,4 +1,4 @@
-package come.class01;
+package come.class01.attempt01;
 
 import java.util.Arrays;
 import java.util.Random;

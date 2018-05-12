@@ -1,4 +1,4 @@
-package come.class01;
+package come.class01.attempt01;
 
 public class SelectionSort {
     public int[] selectionSort(int[] array) {

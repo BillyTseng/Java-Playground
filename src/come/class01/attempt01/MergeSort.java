@@ -1,4 +1,4 @@
-package come.class01;
+package come.class01.attempt01;
 
 public class MergeSort {
     public int[] mergeSort(int[] array) {
