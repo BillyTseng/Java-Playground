@@ -1,4 +1,4 @@
-package come.class02;
+package come.class02.attempt01;
 
 public class ClosestInSortedArray {
     public int closest(int[] array, int target) {

@@ -1,4 +1,4 @@
-package come.class02;
+package come.class02.attempt01;
 
 import java.util.Arrays;
 

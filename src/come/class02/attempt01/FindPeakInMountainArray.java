@@ -1,4 +1,4 @@
-package come.class02;
+package come.class02.attempt01;
 // Variant 1.6: Array 1 2 7 23 57 ... 100 99 86 44 32 21, find the largest element in the array.
 public class FindPeakInMountainArray {
     private int searchLargestIndex(int[] nums) {

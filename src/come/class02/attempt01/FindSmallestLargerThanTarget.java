@@ -1,4 +1,4 @@
-package come.class02;
+package come.class02.attempt01;
 /* https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/ */
 // Variant 1.6 how to find the smallest element that is larger than a target number.
 public class FindSmallestLargerThanTarget {

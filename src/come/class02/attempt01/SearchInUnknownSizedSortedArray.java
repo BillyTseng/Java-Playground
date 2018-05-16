@@ -1,4 +1,4 @@
-package come.class02;
+package come.class02.attempt01;
 
 interface Dictionary {
     public Integer get(int index);

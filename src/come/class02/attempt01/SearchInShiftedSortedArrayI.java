@@ -1,4 +1,4 @@
-package come.class02;
+package come.class02.attempt01;
 
 public class SearchInShiftedSortedArrayI {
     public int search(int[] array, int target) {
