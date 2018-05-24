@@ -19,4 +19,19 @@ public class InsertInSortedLinkedList {
         }
         return dummy.next;
     }
+
+    public ListNode insertII(ListNode head, int value) {
+        ListNode newNode = new ListNode(value);
+        if (head == null || value <= head.value) {
+            newNode.next = head;
+            return newNode;
+        }
+        ListNode prev = head;
+        while (prev.next != null && value > prev.next.value) {
+            prev = prev.next;
+        }
+        newNode.next = prev.next;
+        prev.next = newNode;
+        return head;
+    }
 }
