@@ -1,5 +1,5 @@
 package leet.depthfirstSearch;
-
+/* 695.	Max Area of Island - easy */
 public class MaxAreaOfIsland {
     private final int ISLAND = 1;
 
