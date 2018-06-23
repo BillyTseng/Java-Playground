@@ -5,8 +5,7 @@ public class LargestSquareSurroundedOne {
         if (matrix == null) {
             return 0;
         }
-        if (matrix.length == 0 || matrix[0].length == 0 ||
-                matrix.length == matrix[0].length) {
+        if (matrix.length == 0 || matrix[0].length == 0) {
             return 0;
         }
         int m = matrix[0].length;
