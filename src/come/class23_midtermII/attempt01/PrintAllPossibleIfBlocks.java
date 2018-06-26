@@ -1,4 +1,4 @@
-package come.midtermII;
+package come.class23_midtermII.attempt01;
 
 /* Given an integer n, print/output all possible if blocks for it.
     Say n=2 output should be. */
