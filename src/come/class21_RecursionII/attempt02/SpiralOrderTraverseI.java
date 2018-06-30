@@ -1,4 +1,4 @@
-package come.class10.attempt01;
+package come.class21_RecursionII.attempt02;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,11 +6,16 @@ import java.util.List;
 public class SpiralOrderTraverseI {
     public List<Integer> spiral(int[][] matrix) {
         List<Integer> res = new ArrayList<>();
-        spiral(matrix, 0, matrix.length, res);
+        int n = matrix.length;
+        if (n == 0) {
+            return res;
+        }
+
+        spiral(matrix, res, 0, n);
         return res;
     }
 
-    private void spiral(int[][] matrix, int offset, int size, List<Integer> res) {
+    private void spiral(int[][] matrix, List<Integer> res, int offset, int size) {
         if (size == 0) {
             return;
         }
@@ -35,6 +40,7 @@ public class SpiralOrderTraverseI {
         for (int i = size - 1; i >= 1; i--) {
             res.add(matrix[offset + i][offset]);
         }
-        spiral(matrix, offset + 1, size - 2, res);
+
+        spiral(matrix, res, offset + 1, size - 2);
     }
 }

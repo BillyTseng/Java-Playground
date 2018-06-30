@@ -1,6 +1,6 @@
-package come.class10.attempt01;
+package come.class21_RecursionII;
 
-public class LowestCommonAncestorI {
+public class Q5_3_LowestCommonAncestorI {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode one, TreeNode two) {
         if (root == null || root == one || root == two) {
             return root;

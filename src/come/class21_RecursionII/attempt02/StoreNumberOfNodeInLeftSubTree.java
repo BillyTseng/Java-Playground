@@ -1,10 +1,10 @@
-package come.class10.attempt01;
+package come.class21_RecursionII.attempt02;
 
 public class StoreNumberOfNodeInLeftSubTree {
     class TreeNode {
-        int key;
         TreeNode left;
         TreeNode right;
+        int key;
         int leftTotal;
 
         TreeNode(int key) {
@@ -12,12 +12,13 @@ public class StoreNumberOfNodeInLeftSubTree {
         }
     }
 
-    private int getTotal(TreeNode root) {
+    private int leftTotal(TreeNode root) {
         if (root == null) {
             return 0;
         }
-        int left = getTotal(root.left);
-        int right = getTotal(root.right);
+
+        int left = leftTotal(root.left);
+        int right = leftTotal(root.right);
         root.leftTotal = left;
         return 1 + left + right;
     }

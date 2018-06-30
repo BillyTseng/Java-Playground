@@ -1,4 +1,4 @@
-package come.class10.attempt01;
+package come.class21_RecursionII.attempt02;
 
 public class StringAbbreviationMatching {
     public boolean match(String text, String pattern) {
@@ -6,14 +6,14 @@ public class StringAbbreviationMatching {
     }
 
     private boolean match(String text, int textStart, String pattern, int patternStart) {
-        if (text.length() == textStart && pattern.length() == patternStart) {
+        if (textStart == text.length() && patternStart == pattern.length()) {
             return true;
-        } else if (text.length() <= textStart || pattern.length() <= patternStart) {
+        } else if (textStart >= text.length() || patternStart >= pattern.length()) {
             return false;
         }
 
         if (Character.isLetter(pattern.charAt(patternStart))) {
-            if (text.charAt(textStart) == pattern.charAt(patternStart))  {
+            if (text.charAt(textStart) == pattern.charAt(patternStart)) {
                 return match(text, textStart + 1, pattern, patternStart + 1);
             } else {
                 return false;
@@ -21,7 +21,7 @@ public class StringAbbreviationMatching {
         } else {
             int num = 0;
             while (patternStart < pattern.length() && Character.isDigit(pattern.charAt(patternStart))) {
-                num = num * 10 + (pattern.charAt(patternStart) - '0');
+                num = num * 10 + (int)(pattern.charAt(patternStart) - '0');
                 patternStart++;
             }
             return match(text, textStart + num, pattern, patternStart);

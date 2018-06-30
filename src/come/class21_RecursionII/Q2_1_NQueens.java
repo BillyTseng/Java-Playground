@@ -1,9 +1,9 @@
-package come.class10.attempt01;
+package come.class21_RecursionII;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class NQueens {
+public class Q2_1_NQueens {
     public static void main (String[] args) {
         NQueensII solution = new NQueensII();
         solution.nqueens(4);
