@@ -25,12 +25,16 @@ public class Q1_1_DeepCopyLinkedListWithRandomPointer {
 
         while (head != null) {
             if (head.next != null) {
-                lookup.put(head.next, new RandomListNode(head.next.value));
+                if (!lookup.containsKey(head.next)) {
+                    lookup.put(head.next, new RandomListNode(head.next.value));
+                }
                 curr.next = lookup.get(head.next);
             }
 
             if (head.random != null) {
-                lookup.put(head.random, new RandomListNode(head.random.value));
+                if (!lookup.containsKey(head.random)) {
+                    lookup.put(head.random, new RandomListNode(head.random.value));
+                }
                 curr.random = lookup.get(head.random);
             }
             head = head.next;
