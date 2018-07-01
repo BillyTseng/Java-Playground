@@ -3,7 +3,7 @@ package come.class26_BST_DP;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Q1_DeepCopyLinkedListWithRandomPointer {
+public class Q1_1_DeepCopyLinkedListWithRandomPointer {
     class RandomListNode {
         public int value;
         public RandomListNode next;
