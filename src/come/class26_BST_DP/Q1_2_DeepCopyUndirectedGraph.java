@@ -5,13 +5,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Q2_2_DeepCopyUndirectedGraph {
+public class Q1_2_DeepCopyUndirectedGraph {
     class GraphNode {
         public int key;
         List<GraphNode> neighbors;
         GraphNode(int key) {
           this.key = key;
-          this.neighbors = new ArrayList<GraphNode>();
+          this.neighbors = new ArrayList<>();
         }
       }
 
