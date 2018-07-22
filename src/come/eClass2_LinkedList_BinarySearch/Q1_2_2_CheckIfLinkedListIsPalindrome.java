@@ -1,6 +1,6 @@
 package come.eClass2_LinkedList_BinarySearch;
 
-public class Q2_2_CheckIfLinkedListIsPalindrome {
+public class Q1_2_2_CheckIfLinkedListIsPalindrome {
     class ListNode {
         public int value;
         public ListNode next;

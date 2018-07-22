@@ -7,7 +7,7 @@ import java.util.Set;
  * https://leetcode.com/problems/intersection-of-two-linked-lists/description/
  */
 
-public class Q3_2_IntersectionOfTwoLinkedLists {
+public class Q1_3_2_IntersectionOfTwoLinkedLists {
     class ListNode {
         public int value;
         public ListNode next;

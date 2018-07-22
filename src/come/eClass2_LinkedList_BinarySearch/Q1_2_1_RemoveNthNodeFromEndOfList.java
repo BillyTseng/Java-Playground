@@ -1,6 +1,6 @@
 package come.eClass2_LinkedList_BinarySearch;
 
-public class Q2_1_RemoveNthNodeFromEndOfList {
+public class Q1_2_1_RemoveNthNodeFromEndOfList {
     class ListNode {
         public int value;
         public ListNode next;

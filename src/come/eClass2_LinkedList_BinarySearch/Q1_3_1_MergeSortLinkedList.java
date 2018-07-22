@@ -1,6 +1,6 @@
 package come.eClass2_LinkedList_BinarySearch;
 
-public class Q3_1_MergeSortLinkedList {
+public class Q1_3_1_MergeSortLinkedList {
     class ListNode {
         public int value;
         public ListNode next;

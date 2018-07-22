@@ -1,6 +1,6 @@
 package come.eClass2_LinkedList_BinarySearch;
 
-public class Q1_ReverseLinkedListInPairs {
+public class Q1_1_ReverseLinkedListInPairs {
     class ListNode {
         public int value;
         public ListNode next;
