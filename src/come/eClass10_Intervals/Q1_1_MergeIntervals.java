@@ -8,20 +8,12 @@ import java.util.List;
  * 56. Merge Intervals - medium
  */
 
-public class Q1_MergeIntervals {
-    public class Interval {
+public class Q1_1_MergeIntervals {
+    public static class Interval {
         int start;
         int end;
-
-        Interval() {
-            start = 0;
-            end = 0;
-        }
-
-        Interval(int s, int e) {
-            start = s;
-            end = e;
-        }
+        Interval() { start = 0; end = 0; }
+        Interval(int s, int e) { start = s; end = e; }
     }
 
     public List<Interval> merge(List<Interval> intervals) {
