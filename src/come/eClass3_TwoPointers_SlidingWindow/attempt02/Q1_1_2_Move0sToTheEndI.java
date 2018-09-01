@@ -1,6 +1,6 @@
 package come.eClass3_TwoPointers_SlidingWindow.attempt02;
 
-public class Q1_2_Move0sToTheEndI {
+public class Q1_1_2_Move0sToTheEndI {
     public int[] moveZero(int[] array) {
         int left = 0;
         int right = array.length - 1;

@@ -1,6 +1,6 @@
 package come.eClass3_TwoPointers_SlidingWindow.attempt02;
 
-public class Q1_1_QuickSort {
+public class Q1_1_1_QuickSort {
     public int[] quickSort(int[] input) {
         if (input == null || input.length == 0) {
             return input;
