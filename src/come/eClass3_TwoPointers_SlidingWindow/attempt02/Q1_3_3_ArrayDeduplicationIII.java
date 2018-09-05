@@ -1,4 +1,4 @@
-package come.eClass3_TwoPointers_SlidingWindow;
+package come.eClass3_TwoPointers_SlidingWindow.attempt02;
 
 import java.util.Arrays;
 
@@ -7,11 +7,11 @@ public class Q1_3_3_ArrayDeduplicationIII {
         if (array.length <= 1) {
             return array;
         }
-        int slow = 0;
-        int fast = 0;
+
+        int slow = 0, fast = 0;
         while (fast < array.length) {
             int begin = fast;
-            while (fast < array.length && array[begin] == array[fast]) {
+            while (fast < array.length && array[fast] == array[begin]) {
                 fast++;
             }
             if (fast - begin == 1) {
