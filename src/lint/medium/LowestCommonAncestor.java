@@ -3,8 +3,8 @@ package lint.medium;
 public class LowestCommonAncestor {
     /*
      * @param root: The root of the binary search tree.
-     * @param A: A TreeNode in a Binary.
-     * @param B: A TreeNode in a Binary.
+     * @param A: A Node in a Binary.
+     * @param B: A Node in a Binary.
      * @return: Return the least common ancestor(LCA) of the two nodes.
      */
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode A, TreeNode B) {

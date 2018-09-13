@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Definition of TreeNode:
- * public class TreeNode {
+ * Definition of Node:
+ * public class Node {
  *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
+ *     public Node left, right;
+ *     public Node(int val) {
  *         this.val = val;
  *         this.left = this.right = null;
  *     }
