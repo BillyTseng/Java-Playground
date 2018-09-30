@@ -2,7 +2,7 @@ package leet.a;
 
 import java.util.*;
 
-public class Q127_0_WordLadder {
+public class Q127_WordLadder {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> dict = new HashSet<>(wordList);
         if (!dict.contains(endWord)) {
