@@ -19,7 +19,7 @@ public class Test {
                 assert !lot.park(v);
             }
         }
-        assert list.size() == 508;
+        assert list.size() == 50;
         int i = 0;
         for (Vehicle v : list) {
             assert i >= 40 || lot.leave(v);
