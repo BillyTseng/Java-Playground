@@ -60,9 +60,7 @@ public class Q138_CopyListWithRandomPointer {
         // 2. assign random pointer for cloned nodes.
         curr = head;
         while (curr != null) {
-            if (curr.random != null) {
-                curr.next.random = (curr.next == null) ? null : curr.random.next;
-            }
+            curr.next.random = (curr.random == null) ? null : curr.random.next;
             curr = curr.next.next;
         }
 
