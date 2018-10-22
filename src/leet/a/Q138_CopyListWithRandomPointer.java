@@ -13,6 +13,7 @@ public class Q138_CopyListWithRandomPointer {
         }
     }
 
+    // time: O(n), space: O(1)
     public RandomListNode copyRandomList(RandomListNode head) {
         Map<RandomListNode, RandomListNode> map = new HashMap<>();
         RandomListNode orgHead = head;
@@ -39,5 +40,42 @@ public class Q138_CopyListWithRandomPointer {
             head = head.next;
         }
         return map.get(orgHead);
+    }
+
+    // time: O(n), space: O(1)
+    public RandomListNode copyRandomListI(RandomListNode head) {
+        if (head == null) {
+            return null;
+        }
+
+        // 1. establish cloned nodes next to the original nodes.
+        RandomListNode curr = head;
+        while (curr != null) {
+            RandomListNode clone = new RandomListNode(curr.label);
+            clone.next = curr.next;
+            curr.next = clone;
+            curr = curr.next.next;
+        }
+
+        // 2. assign random pointer for cloned nodes.
+        curr = head;
+        while (curr != null) {
+            if (curr.random != null) {
+                curr.next.random = (curr.next == null) ? null : curr.random.next;
+            }
+            curr = curr.next.next;
+        }
+
+        // 3. separate original and cloned list.
+        RandomListNode ptrOrgList = head;
+        RandomListNode ptrNewList = head.next;
+        RandomListNode newHead = head.next;
+        while (ptrOrgList != null) {
+            ptrOrgList.next = ptrOrgList.next.next;
+            ptrNewList.next = (ptrNewList.next == null) ? null : ptrNewList.next.next;
+            ptrOrgList = ptrOrgList.next;
+            ptrNewList = ptrNewList.next;
+        }
+        return newHead;
     }
 }
