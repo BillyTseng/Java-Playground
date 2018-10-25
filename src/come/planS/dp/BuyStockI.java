@@ -1,4 +1,4 @@
-package come.seattlePlan.dp;
+package come.planS.dp;
 
 public class BuyStockI {
     public int maxProfit(int[] array) {

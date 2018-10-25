@@ -1,4 +1,4 @@
-package come.seattlePlan.linkedlist;
+package come.planS.linkedlist;
 
 import java.util.Comparator;
 import java.util.List;

@@ -1,4 +1,4 @@
-package come.seattlePlan.misc;
+package come.planS.misc;
 
 import java.util.Collections;
 import java.util.PriorityQueue;

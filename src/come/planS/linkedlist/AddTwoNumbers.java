@@ -1,4 +1,4 @@
-package come.seattlePlan.linkedlist;
+package come.planS.linkedlist;
 
 public class AddTwoNumbers {
     class ListNode {

@@ -1,4 +1,4 @@
-package come.seattlePlan.array_string;
+package come.planS.array_string;
 
 public class LongestPalindromicSubstring {
 

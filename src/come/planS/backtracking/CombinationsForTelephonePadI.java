@@ -1,4 +1,4 @@
-package come.seattlePlan.backtracking;
+package come.planS.backtracking;
 
 import java.util.ArrayList;
 import java.util.HashMap;
