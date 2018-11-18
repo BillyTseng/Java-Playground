@@ -1,4 +1,4 @@
-package leet;
+package leet.Q51toQ100;
 
 public class Q55_JumpGame {
     // DP, time O(n^2), space O(n)
